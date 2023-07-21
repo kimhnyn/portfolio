@@ -1,0 +1,1 @@
+//have view more button component

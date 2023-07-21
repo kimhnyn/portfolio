@@ -1,0 +1,12 @@
+// This file serves as the main entry point for importing all your SCSS files. You can import all other SCSS files here.
+
+//add breakpoints for responsiveness at some point
+/* Import SCSS partials */
+@import '../styles/colors';
+@import '../styles/base';
+@import '../styles/layouts';
+@import '../styles/mixins';
+@import '../styles/reset';
+@import '../styles/typography';
+
+/* Import component-specific styles */
