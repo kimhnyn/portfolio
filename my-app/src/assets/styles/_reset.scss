@@ -1,1 +1,19 @@
 // Include CSS reset or normalize styles to ensure consistent rendering across different browsers.
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration:none;
+  &:hover, &:active, &:after, &:visited {
+    color: $primary-dark-grey-100;
+  }
+}

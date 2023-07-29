@@ -1,3 +1,20 @@
 //Store global mixins, like utility functions, that can be reused across various components and pages.
+@import '../styles/reset';
 
+@mixin horizontal-list {
+  ul {
+    @include reset-list;
+    // display:flex;
+    // flex-direction:row;
+    // flex-wrap:nowrap;
+    // flex: auto;
+    // gap: 60px;
+    // justify-content:flex-end;
+    display: grid;
+    gap:3rem;
+    grid-template-columns: repeat(4, minmax(0, 1.5fr));
+    text-align:center;    
+  }
+}
 //add drop shadow mixin
+//add mixin for removing bullet point from lists
