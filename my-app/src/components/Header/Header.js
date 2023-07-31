@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //make a separate component for header loader that turns into header
 //add svg for logo
 function Header(){
-  const [activeNavLink, setsActiveNavLink] = useState('');
+  const [activeNavLink, setsActiveNavLink] = useState('/');
 
   const handleNavLinkClick = (navLink) => {
     setsActiveNavLink(navLink);
@@ -18,7 +18,8 @@ function Header(){
     <div>
       <nav className='nav'>
         <div className='container'>
-          <Link to="/">
+          <Link to="/"
+                onClick={()=> handleNavLinkClick('/')}>
             <LogoIcon className="logo" />
           </Link>
           <ul>
