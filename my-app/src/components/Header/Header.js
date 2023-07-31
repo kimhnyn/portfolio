@@ -16,38 +16,41 @@ function Header(){
 
   return(
     <div>
-      <nav>
-        <Link to="/">
-          <LogoIcon className="logo" />
-        </Link>
-        <ul>
-          <li>
-            <Link to="/" 
-                  className={activeNavLink === '/' ? 'activeNav' : ''}
-                  onClick={()=> handleNavLinkClick('/')}>Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" 
-                  className={activeNavLink === '/about' ? 'activeNav' : ''}
-                  onClick={()=> handleNavLinkClick('/about')}>About
-            </Link>
-          </li>
-          <li>
-            <Link to="/creative" 
-                  className={activeNavLink === '/creative' ? 'activeNav': ''}
-                  onClick={()=> handleNavLinkClick('/creative')}>Creative
-            </Link>
-          </li>
-          <li>
-            <Link to="/portfolio" 
-                  className={activeNavLink === '/portfolio' ? 'activeNav':''}
-                  onClick={()=> handleNavLinkClick('/portfolio')}>Portfolio
-            </Link>
-          </li>
-        </ul>
+      <nav className='nav'>
+        <div className='container'>
+          <Link to="/">
+            <LogoIcon className="logo" />
+          </Link>
+          <ul>
+            <li>
+              <Link to="/"
+                    className={activeNavLink === '/' ? 'activeNav' : ''}
+                    onClick={()=> handleNavLinkClick('/')}>Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" 
+                    className={activeNavLink === '/about' ? 'activeNav' : ''}
+                    onClick={()=> handleNavLinkClick('/about')}>About
+              </Link>
+            </li>
+            <li>
+              <Link to="/creative" 
+                    className={activeNavLink === '/creative' ? 'activeNav': ''}
+                    onClick={()=> handleNavLinkClick('/creative')}>Creative
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" 
+                    className={activeNavLink === '/portfolio' ? 'activeNav':''}
+                    onClick={()=> handleNavLinkClick('/portfolio')}>Portfolio
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   );
-}
+};
+
 export default Header;

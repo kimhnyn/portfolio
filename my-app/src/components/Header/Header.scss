@@ -2,40 +2,22 @@
   * into the three bars **/
 @import '../../assets/styles/main.scss';
 
-nav {
+nav .container{
   /* layout */
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   flex-wrap:wrap;
   @include horizontal-list;
+  height: 5em;
+  padding-top: 3em;
+}
 
-  /* alignment and size */
-  padding: 39px 72px;
-
+nav {
   li a {
-    display: inline-block;
-    transition: all 300ms ease-in-out;
- 
-    &:hover {
-      color: $primary-dark-grey-30;
-    }
-
-    &:after {
-      display: block;
-      border-bottom: solid 1px $primary-dark-grey-30;// While hovering
-      padding-bottom:2px;
-      content: '';
-      transform: scaleX(0);
-      transition: transform 300ms ease-in-out;
-      transform-origin: 100% 50%;
-    }
-
-    &:hover:after {
-      transform: scaleX(1);
-      transform-origin: 0 50%;
-      transition: transform 300ms ease-in-out;
-    }
+    @include reset-link;
+    color: $primary-dark-grey-100; 
+    @include hover-underline($primary-dark-grey-30);
   }
 }
 
@@ -46,7 +28,6 @@ nav {
   &::after{
     transform: scaleX(1);
   }
-  
 }
 
 // @media (min-width:320px) {
