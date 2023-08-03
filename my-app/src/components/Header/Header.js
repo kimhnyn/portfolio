@@ -1,16 +1,18 @@
 import './Header.scss';
 import { useState } from 'react';
 import LogoIcon from '../Images/LogoSVG';
-import { Link } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom'; 
 //make a separate component for header loader that turns into header
 //add svg for logo
 function Header(){
-  const [activeNavLink, setsActiveNavLink] = useState('/');
+  let location = useLocation();
+  const [activeNavLink, setsActiveNavLink] = useState(`${location.pathname}`);
 
   const handleNavLinkClick = (navLink) => {
     setsActiveNavLink(navLink);
   };
   
+
   /* isActive stores the result of the arrow function pathname that compares the pathname param of the location object
   * that is obtained from using useLocation() with the provided pathname */
 
