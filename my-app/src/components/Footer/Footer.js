@@ -1,6 +1,8 @@
 import './Footer.scss';
 
 function Footer(){
-  return("hello");
+  return(
+    <div>footer</div>
+  );
 }
 export default Footer;

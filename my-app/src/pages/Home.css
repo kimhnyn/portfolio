@@ -1,1 +1,30 @@
-/*# sourceMappingURL=Home.css.map */
+.Home-Container {
+  margin-bottom: 10rem;
+}
+.Home-Container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.Home-Container .container.introduction {
+  margin-bottom: 6em;
+}
+
+.header-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  margin: 0 auto;
+}
+
+.projects-contain {
+  margin: 0 auto;
+}/*# sourceMappingURL=Home.css.map */

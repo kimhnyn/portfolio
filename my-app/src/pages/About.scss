@@ -1,0 +1,73 @@
+
+.About-Container .right {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap:3rem;
+}
+
+.About-Container {
+  .container.introduction {
+    margin-bottom: 1em;
+  }
+}
+
+.header-contain {
+  margin-bottom: 3em;
+}
+
+.img-contain {
+  margin: -2rem auto;
+  display:flex;
+  flex-direction:column;
+  align-content:center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  img {
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 400px;
+    width:15rem;
+    height: auto;
+    max-width:80%;
+    @include basic-hover;
+  }
+}
+
+.obsessions-contain {
+  margin: 0 auto 3rem auto;
+}
+
+.obsession-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width:80%;
+}
+
+.obsession-grid-child {
+  display: flex;
+  background-color: $light-green-100;
+  text-align:center;
+  height: 20rem ;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem;
+  border-radius: 6em  ;
+  box-shadow: $drop-shadow;
+
+  @include outline-hover(white);
+  h4 {
+    width: 8.75rem;
+    color: white;
+    font-weight: 300;
+    line-height: $line-height-med;
+    
+  }
+}
+
+.obsession-descr {
+  p {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,24 @@
+
+.Projects.contain {
+  display: flex;
+  flex-direction: row;
+  gap:  13rem;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .case-study-contain {
+      a{
+        @include reset-link;
+      }
+      p {
+        @include hover-underline($primary-brown-100);
+      }
+    }
+  }
+  .right {
+    max-width: 50vw;
+  }
+}

@@ -1,0 +1,26 @@
+
+.subheader-contain {
+  display: flex;
+  justify-content: flex-start;
+  padding: 3rem 10rem 3rem 3rem;
+  border-radius:5rem 3rem 12.5em 2rem;
+  // border-radius: 70px 70px 200px 30px;
+  background-color: $secondary-blue-100;
+  width: max-content;
+  //min-width:400px;
+  max-width: 200em;
+  @include outline-hover(white);
+  flex-grow:unset;
+  flex-shrink:unset;
+}
+
+// .subheader-contain[title='home-icon']{
+//   width: 8.375rem;
+//   height: 8.4375rem;
+//   h3 {
+//     display:none;
+//     &::after{
+//       content:attr)
+//     }
+//   }
+// }

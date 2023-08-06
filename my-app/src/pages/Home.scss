@@ -1,0 +1,70 @@
+
+.Home-Container {
+  margin-bottom: 10rem;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+  }
+
+  .container.introduction {
+    margin-bottom: 6em;
+  }
+}
+
+.header-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5%;
+  column-gap: 5%;
+  margin: 0 auto;
+}
+
+.projects-contain {
+  margin: 0 auto;
+}
+
+// .introduction.inner-contain {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+// }
+// .content-contain {
+//   display: flex;
+//   flex-direction: row;
+//   gap: 3.5em;
+// }
+
+// .content-child {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 3em;
+// }
+
+// .text-contain {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4em;
+// }
+
+// #portfolio {
+//   gap: 50%;
+
+//   .divider {
+//     border-bottom: solid 2px $light-green-50;
+//     width:90%;
+//     line-height:0em;
+//     align-self: center;
+//   }
+// }
+
+// .grid.portfolio{
+//   grid-template-columns: repeat(2, 50%);
+// }

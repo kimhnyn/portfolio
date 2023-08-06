@@ -1,6 +1,11 @@
 // Include CSS reset or normalize styles to ensure consistent rendering across different browsers.
 
-body{
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -11,9 +16,11 @@ body{
   list-style: none;
 }
 
-a {
-  text-decoration:none;
-  &:hover, &:active, &:after, &:visited {
-    color: $primary-dark-grey-100;
-  }
+@mixin reset-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  // &:hover, &:active, &:after, &:visited {
+  //   color: $primary-dark-grey-100;
+  // }
 }

@@ -1,0 +1,11 @@
+@import '../../assets/styles/main.scss';
+
+.not-found-contain{
+  @include center-flex(column);
+  height: 80vh;
+  gap: 0.5em;
+
+  // &:hover {
+    
+  // }
+}
