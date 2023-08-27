@@ -34,6 +34,12 @@ function Header(){
               </Link>
             </li>
             <li>
+              <Link to="/portfolio" 
+                    className={activeNavLink === '/portfolio' ? 'activeNav':''}
+                    onClick={()=> handleNavLinkClick('/portfolio')}>Portfolio
+              </Link>
+            </li>
+            <li>
               <Link to="/about" 
                     className={activeNavLink === '/about' ? 'activeNav' : ''}
                     onClick={()=> handleNavLinkClick('/about')}>About
@@ -43,12 +49,6 @@ function Header(){
               <Link to="/creative" 
                     className={activeNavLink === '/creative' ? 'activeNav': ''}
                     onClick={()=> handleNavLinkClick('/creative')}>Creative
-              </Link>
-            </li>
-            <li>
-              <Link to="/portfolio" 
-                    className={activeNavLink === '/portfolio' ? 'activeNav':''}
-                    onClick={()=> handleNavLinkClick('/portfolio')}>Portfolio
               </Link>
             </li>
           </ul>
