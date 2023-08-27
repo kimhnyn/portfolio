@@ -114,3 +114,25 @@
   flex-direction: column;
   gap: 2em;
 }
+
+ol, ul {
+  display: flex;
+  gap: 1.125rem;
+  flex-direction: column;
+
+  li {
+    line-height: 1.5rem;
+  }
+}
+
+.overview p, .descr-contain p{
+  margin-bottom: 1rem;
+}
+
+.descr-contain {
+  margin-bottom: 2em;
+}
+
+.left .descr-contain {
+  margin-bottom: 1rem;
+}

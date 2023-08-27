@@ -49,7 +49,7 @@ function About(){
           <div className='obsession-grid'>
             <div className='obsession-grid-child'><h4>collecting fragrances</h4></div>
             <div className='obsession-grid-child'><h4>jazz<br/>japanese folk music</h4></div>
-            <div className='obsession-grid-child'><h4>cafe hopping</h4></div>
+            <div className='obsession-grid-child'><h4><a href='https://www.instagram.com/fleurcreme/' target="_blank">cafe hopping</a></h4></div>
           </div>
         </div>
         <div className='obsession-descr'>

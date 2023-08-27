@@ -1,1 +1,5 @@
-/*# sourceMappingURL=Portfolio.css.map */
+.works-container {
+  display: flex;
+  gap: 4em;
+  flex-direction: column;
+}/*# sourceMappingURL=Portfolio.css.map */

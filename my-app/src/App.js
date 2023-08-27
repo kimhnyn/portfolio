@@ -7,6 +7,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Creative from './pages/Creative';
+import TaskClear from './pages/projects/TaskClear';
+import BruinHive from './pages/projects/BruinHive';
+import ClassBuddi from './pages/projects/ClassBuddi';
+import AASC from './pages/projects/AASC';
+import FanSpace from './pages/projects/FanSpace';
 import NotFound from './pages/NotFound/NotFound';
 
 //import logo from './logo.svg';
@@ -22,6 +27,12 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/creative" component={Creative} />
         <Route path="/portfolio" component={Portfolio} />
+        <Route path="/projects/fanspace" component={FanSpace} />
+        <Route path="/projects/bruinhive" component={BruinHive} />
+        <Route path="/projects/AASC" component={AASC} />
+        <Route path="/projects/classbuddi" component={ClassBuddi} />
+        <Route path="/projects/taskclear" component={TaskClear} />
+
         <Route component={NotFound} />
       </Switch>
     </Router>

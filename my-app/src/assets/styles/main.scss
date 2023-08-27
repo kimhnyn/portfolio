@@ -2,12 +2,18 @@
 
 //add breakpoints for responsiveness at some point
 /* Import SCSS partials */
-@import '../styles/colors';
-@import '../styles/base';
-@import '../styles/layouts';
-@import '../styles/mixins';
-@import '../styles/reset';
-@import '../styles/typography';
+@import './colors';
+@import './base';
+@import './layouts';
+@import './mixins';
+@import './reset';
+@import './typography';
+// @import '../styles/colors';
+// @import '../styles/base';
+// @import '../styles/layouts';
+// @import '../styles/mixins';
+// @import '../styles/reset';
+// @import '../styles/typography';
 
 // @import '../../components/Contact/Contact.scss';
 // @import '../../components/Dots/Dots.scss';

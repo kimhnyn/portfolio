@@ -6,23 +6,29 @@ import bruinhiveImg from '../assets/images/bruinhive-card.png';
 import taskclearImg from '../assets/images/taskclear-card.png';
 import classbuddiImg from '../assets/images/ClassBuddi-card.png';
 import aascImg from '../assets/images/AASC-card.png';
-
+  
 import PageSubHeader from '../components/PageSubheader/PageSubheader';
 import Dots from '../components/Dots/Dots';
 import Contact from '../components/Contact/Contact';
 import Technologies from '../components/Technologies/Technologies';
 import Projects from '../components/Projects/Projects';
+import PortfolioHomeCard from '../components/Portfolio Home Card/PortfolioHomeCard';
 
 function Portfolio(){
   return(
     <div className='Portfolio-Container'>
       <section className='container introduction'>
-        <h1>portfolio.</h1>
-        <div className='first-section'>
-          <PageSubHeader text="my collection of experiences." />
+        <div className='header-portfolio'>
+          <div className='header-contain'>
+           <h1>portfolio.</h1>
+           <PageSubHeader text="my collection of experiences." />
+          </div>
+          <Technologies />
         </div>
+
         <div className='works-container'>
-          <Projects 
+          <Projects />
+          {/* <Projects 
             title='FanSpace'
             categ='mobile application'
             link='/projects/fanspace'
@@ -59,7 +65,7 @@ function Portfolio(){
  A feed where students can send and receive requests to study in a group together
 Statistics of average study time per course on a daily and weekly basis. "
             imgSrc={taskclearImg}
-          />
+          /> */}
         </div>        
       </section>
     </div>

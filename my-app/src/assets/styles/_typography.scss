@@ -35,7 +35,7 @@ $font-style-regular: normal;
 $font-style-italic: italic;
 
 /* Line Heights */
-$line-height-large: 170%;
+$line-height-large: 180%;
 $line-height-med: 122%;
 $line-height-reg: normal;
 
@@ -71,12 +71,14 @@ h1 {
 
 h2 {
   font-weight: $font-weight-semi-bold;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-style: $font-style-italic;
   color: white;
   font-weight: $font-weight-light;
+  
 }
 
 h4 {
@@ -89,6 +91,7 @@ h4 {
 p {
   font-size: $small-font-size;
   line-height: $line-height-large;
+  //margin-bottom: 1rem;
 }
 
 #accent-paragraph{
@@ -101,3 +104,7 @@ p.small-paragraph{
 }
 
 /* Links */
+
+a {
+  @include reset-link;
+}

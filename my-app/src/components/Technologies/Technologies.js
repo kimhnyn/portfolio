@@ -7,10 +7,10 @@ function Technologies() {
       <div className='technologies-contain'>
         <h4>technologies</h4>
         <div className='tech-list flex'>
-          <p>figma, wordpress, notion</p>
-          <p>github, git</p>
-          <p>html, css/sass, javascript (react, vanilla)</p>
-          <p>python, c++</p>
+          <p className='small-paragraph'>figma, wordpress, notion</p>
+          <p className='small-paragraph'>github, git</p>
+          <p className='small-paragraph'>html, css/sass, javascript (react, vanilla)</p>
+          <p className='small-paragraph'>python, c++</p>
         </div>
       </div>
   </div>

@@ -1,12 +1,7 @@
 //have view more button componentnpm install react-router-dom
 import './Home.scss';
 
-import fanspaceImg from '../assets/images/fanspace-card.png';
-import bruinhiveImg from '../assets/images/bruinhive-card.png';
-import taskclearImg from '../assets/images/taskclear-card.png';
-import classbuddiImg from '../assets/images/ClassBuddi-card.png';
-import aascImg from '../assets/images/AASC-card.png';
-
+import Projects from '../components/Projects/Projects';
 import PageSubHeader from '../components/PageSubheader/PageSubheader';
 import Contact from '../components/Contact/Contact';
 import PortfolioHomeCard from '../components/Portfolio Home Card/PortfolioHomeCard';
@@ -83,14 +78,7 @@ function Home(){
         <div className='divider'></div>
       </div>
       <div className='projects-contain'>
-        <div className='project-card-grid'>
-          <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-          <PortfolioHomeCard link='/projects/aasc' imgSrc={aascImg} />
-          <PortfolioHomeCard link='/projects/bruinhive' imgSrc={bruinhiveImg} />
-          <PortfolioHomeCard link='/projects/classbuddi' imgSrc={classbuddiImg} />
-          <PortfolioHomeCard link='/projects/taskclear' imgSrc={taskclearImg} />
-          <Technologies />
-        </div>
+      <Projects />
       </div>
     </section>
     </div>

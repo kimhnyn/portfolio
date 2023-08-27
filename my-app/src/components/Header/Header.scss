@@ -1,5 +1,6 @@
 /** add breakpoints for when it becomes mobile/tablet and it collapses 
   * into the three bars **/
+@import '../../assets/styles/main.scss';
 nav .container{
   /* layout */
   display: flex;
@@ -9,8 +10,22 @@ nav .container{
   @include horizontal-list;
   height: 5em;
   padding-top: 3em;
+  max-width: unset;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  position: relative;
+  @include reset-link;
+  padding: 3em;
 }
 
+.logo-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  //background-color: rgb(185,79,83);
+}
 nav {
   li a {
     @include reset-link;

@@ -1,0 +1,25 @@
+.Portfolio-Container {
+  margin-bottom: 10rem;
+}
+
+.header-portfolio {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 1em;
+  
+  .header-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:min-content;
+  }
+}
+
+.works-container {
+  display: flex;
+  gap: 4em;
+  flex-direction: column;
+}

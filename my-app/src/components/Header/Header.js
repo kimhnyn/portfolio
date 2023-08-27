@@ -21,8 +21,10 @@ function Header(){
       <nav className='nav'>
         <div className='container'>
           <Link to="/"
-                onClick={()=> handleNavLinkClick('/')}>
+                onClick={()=> handleNavLinkClick('/')}
+                className='logo-container'>
             <LogoIcon className="logo" />
+                
           </Link>
           <ul>
             <li>
