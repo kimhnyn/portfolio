@@ -1,18 +1,7 @@
 import './Portfolio.scss';
 import '../assets/styles/main.scss';
-
-import fanspaceImg from '../assets/images/fanspace-card.png';
-import bruinhiveImg from '../assets/images/bruinhive-card.png';
-import taskclearImg from '../assets/images/taskclear-card.png';
-import classbuddiImg from '../assets/images/ClassBuddi-card.png';
-import aascImg from '../assets/images/AASC-card.png';
-  
-import PageSubHeader from '../components/PageSubheader/PageSubheader';
-import Dots from '../components/Dots/Dots';
-import Contact from '../components/Contact/Contact';
 import Technologies from '../components/Technologies/Technologies';
 import Projects from '../components/Projects/Projects';
-import PortfolioHomeCard from '../components/Portfolio Home Card/PortfolioHomeCard';
 
 function Portfolio(){
   return(
@@ -21,7 +10,7 @@ function Portfolio(){
         <div className='left'>
           <section className='title'>
             <div className='description'>
-              <p className='small-paragraph'>WORKS UP TO DATE</p>
+              <p className='small-paragraph'>CURRENT EXPERIENCES</p>
               <h1>portfolio.</h1>
             </div>
             <div className='divider'/>

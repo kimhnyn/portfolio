@@ -1,4 +1,5 @@
 import './PortfolioHomeCard.scss';
+import { Link } from 'react-router-dom'; 
 
 function PortfolioHomeCard(props) {
   const title = props.title;
@@ -9,7 +10,7 @@ function PortfolioHomeCard(props) {
 
   return(
     <div className='proj' id={props.id}>
-      <a href={props.link}>
+      <Link to={props.link}>
         <img src={props.imgSrc}></img>
         <div className='card-overlay'>
           <div className='header'>
@@ -20,7 +21,7 @@ function PortfolioHomeCard(props) {
           <div className='description'>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
