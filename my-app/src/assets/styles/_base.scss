@@ -7,9 +7,26 @@ $drop-shadow-med: 0px 5px 20px -5px rgba(0, 0, 0, 0.25);
 //   /* add responsive padding layout -- desktop for now */
 // }
 
-
 body {
   background-color: rgb(250, 250, 250);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-transition {
+  animation: fadeInUp ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* may edit later into a customizable grid mixin */

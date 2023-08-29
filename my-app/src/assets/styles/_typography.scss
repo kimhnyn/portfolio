@@ -108,3 +108,13 @@ p.small-paragraph{
 a {
   @include reset-link;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .description .small-paragraph {
+    color: $primary-dark-grey-50;
+  }
+}

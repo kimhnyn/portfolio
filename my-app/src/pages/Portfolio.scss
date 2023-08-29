@@ -1,5 +1,13 @@
-.Portfolio-Container {
+.portfolio {
   margin-bottom: 10rem;
+  margin: 0 auto;
+  width: 80%;
+
+  .flex {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 6rem;  
+  }
 }
 
 .header-portfolio {
@@ -22,4 +30,8 @@
   display: flex;
   gap: 4em;
   flex-direction: column;
+}
+
+.Portfolio-Container {
+  margin-top: 3rem;
 }

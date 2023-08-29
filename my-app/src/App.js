@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import './assets/styles/main.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -13,28 +14,34 @@ import ClassBuddi from './pages/projects/ClassBuddi';
 import AASC from './pages/projects/AASC';
 import FanSpace from './pages/projects/FanSpace';
 import NotFound from './pages/NotFound/NotFound';
+import { AnimatePresence } from 'framer-motion';
+import Transition from './components/transition';
 
-//import logo from './logo.svg';
-//import './App.css';
+function AnimatedRoutes() {
+  const location = useLocation();
 
-//import Page from './pages/InsertPage;
+  return (
+    <Switch location={location}>
+        <Route exact path="/"><Transition key='home'><Home /></Transition></Route>
+        <Route path="/about"><Transition key='about'><About /></Transition></Route>
+        <Route path="/creative"><Transition key='creative'><Creative /></Transition></Route>
+        <Route path="/portfolio"><Transition key='portfolio'><Portfolio /></Transition></Route>
+        <Route path="/projects/fanspace"><Transition key='fanspace'><FanSpace /></Transition></Route>
+        <Route path="/projects/bruinhive"><Transition key='bruinhive'><BruinHive /></Transition></Route>
+        <Route path="/projects/AASC"><Transition key='AASC'><AASC /></Transition></Route>
+        <Route path="/projects/classbuddi"><Transition key='classbuddi'><ClassBuddi /></Transition></Route>
+        <Route path="/projects/taskclear"><Transition key='taskclear'><TaskClear /></Transition></Route>
+        <Route path="/notfound"><Transition key='notfound'><NotFound /></Transition></Route>
+    </Switch>
+  );
+}
 function App() {
+
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/creative" component={Creative} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/projects/fanspace" component={FanSpace} />
-        <Route path="/projects/bruinhive" component={BruinHive} />
-        <Route path="/projects/AASC" component={AASC} />
-        <Route path="/projects/classbuddi" component={ClassBuddi} />
-        <Route path="/projects/taskclear" component={TaskClear} />
-
-        <Route component={NotFound} />
-      </Switch>
+      <AnimatedRoutes />
+     <Footer/>
     </Router>
   );
 };

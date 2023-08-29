@@ -29,7 +29,7 @@ function Creative(){
             <div className='divider'/> 
             <div className='description descr-contain'>
               
-              <p className='small-paragraph'>In high school, <span id='accent-paragraph'>fleurcreme</span> started as an attempt at adding creativity and artistic perspective to note-taking and journaling through photography and blogging on Instagram. Now, it has extended into a journal of my life, whether this involves the occasional dinner blog or capturing a study date at a cafe I’ve saved on Yelp! </p>
+              <p>In high school, <span id='accent-paragraph'>fleurcreme</span> started as an attempt at adding creativity and artistic perspective to note-taking and journaling through photography and blogging on Instagram. Now, it has extended into a journal of my life, whether this involves the occasional dinner blog or capturing a study date at a cafe I’ve saved on Yelp! </p>
             </div>
           </section>
         </div>

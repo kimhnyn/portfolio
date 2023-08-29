@@ -14,6 +14,22 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.page-transition {
+  animation: fadeInUp ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 /* may edit later into a customizable grid mixin */
 .container {
   width: 80%;
@@ -117,6 +133,27 @@ body {
   gap: 2em;
 }
 
+ol, ul {
+  display: flex;
+  gap: 1.125rem;
+  flex-direction: column;
+}
+ol li, ul li {
+  line-height: 1.5rem;
+}
+
+.overview p, .descr-contain p {
+  margin-bottom: 1rem;
+}
+
+.descr-contain {
+  margin-bottom: 2em;
+}
+
+.left .descr-contain {
+  margin-bottom: 1rem;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
@@ -195,6 +232,7 @@ h1 {
 
 h2 {
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -212,7 +250,7 @@ h4 {
 /* Paragraphs */
 p {
   font-size: 1rem;
-  line-height: 170%;
+  line-height: 180%;
 }
 
 #accent-paragraph {
@@ -225,4 +263,43 @@ p.small-paragraph {
 }
 
 /* Links */
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+a:default, a:hover, a:active, a:after, a:visited {
+  color: inherit;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.title .description .small-paragraph {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  transform: none;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
 /* Import component-specific styles *//*# sourceMappingURL=main.css.map */

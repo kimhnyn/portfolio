@@ -10,69 +10,39 @@ import Technologies from '../components/Technologies/Technologies';
 
 function Home(){
   return (
-    <div className='Home-Container'>
-      <section className='container introduction'>
-        <h1>hi, i'm kim.</h1>
-        <div className='inner-introduction'>
+    <div className='home fade'>
+      <div className='flex'>
           <div className='left'>
-           <PageSubHeader text='nice to meet you!' title='home-icon'/>
-           <div className='text-contain'>
-              <p>I’m a junior at <span id='accent-paragraph'>UCLA</span> studying Computer Science and Linguistics. 
-                  My passions lie in bringing a user-focused design perspective into software 
-                  development and creating things that prioritize both the user and the 
-                  developer as I study UI/UX Design and computer science. 
-              </p>
-              <p>Currently, I’m a <br/>
-                  <span id='accent-paragraph'> frontend developer</span> at UCLA Asian American Studies Center and
-                  <br/>
-                  <span id='accent-paragraph'> UI/UX Design Lead</span> at Creative Labs.
-              </p>
-           </div>
+            <section className='title'>
+              <div className='description'>
+                <p className='small-paragraph'>NICE TO MEET YOU!</p>
+                <h1>hi, i'm kim.</h1>
+              </div>
+              <div className='divider'/> 
+              <div className='description descr-contain'>
+                <div className='text-contain'>
+                  <p>I’m a junior at <span id='accent-paragraph'>UCLA</span> studying Computer Science and Linguistics. 
+                  My passions lie in bringing a user-focused design perspective into 
+                  software development and creating things that prioritize both the user
+                  and the developer as I study UI/UX Design and computer science. 
+                  </p>
+                  <p>Currently, I’m a <br/>
+                      <span id='accent-paragraph'> frontend developer</span> at UCLA Asian American Studies Center and
+                      <br/>
+                      <span id='accent-paragraph'> UI/UX Design Lead</span> at Creative Labs.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
           <div className='right'>
-            <Dots className='flex' direction='horizontal' align='start' />
+            <Dots direction='horizontal' align='start' />
             <Contact />
           </div>
         </div>
-        
-        {/* this container will be flex horizontal top-align */}
-        {/* <div className='introduction-inner' id='info'>
-          <div className='flex-child'>
-            <PageSubHeader text='nice to meet you!' title='home-icon'/>
-            <div className='flex horizontal'>
-              <div className='text-contain'>
-                <p>I’m a junior at <span id='accent-paragraph'>UCLA</span> studying Computer Science and Linguistics. 
-                    My passions lie in bringing a user-focused design perspective into software 
-                    development and creating things that prioritize both the user and the 
-                    developer as I study UI/UX Design and computer science. 
-                </p>
-                <p className='no-wrap'>Currently, I’m a <br/>
-                    <span id='accent-paragraph'> frontend developer</span> at UCLA Asian American Studies Center and
-                    <br/>
-                    <span id='accent-paragraph'> UI/UX Design Lead</span> at Creative Labs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className='flex-child'>
-            <Contact />
-          </div>
-        </div>
-    </section>
-    <section className='container'>
-      <div className='flex horizontal' id="portfolio">
-        <h2>portfolio.</h2>
-        <div className='divider'> </div>
-      </div>
-      <div className='grid portfolio'>
-        <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-        <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-        <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-        <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-        <PortfolioHomeCard link='/projects/fanspace' imgSrc={fanspaceImg} />
-      </div> */}
-    </section>
-    <section className='container projects'>
+    
+    
+    <section className='projects'>
       <div className='header-contain'>
         <h2 id='portfolio'>portfolio.</h2>
         <div className='divider'></div>

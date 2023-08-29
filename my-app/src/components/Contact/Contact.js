@@ -6,7 +6,7 @@ function Contact(){
     <div className='Contact'>
       <div className='contact-contain'>
         <h4>let's talk</h4>
-        <div className='contact-list flex'>
+        <div className='contact-list'>
           <a href='https://www.linkedin.com/in/kimberlynguyenh/' target="_blank">
             <ArrowForwardIcon color="$secondary-blue-100" />
             <p className='small'>linkedin</p>

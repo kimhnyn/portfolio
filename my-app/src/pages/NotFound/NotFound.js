@@ -7,7 +7,7 @@ function NotFound(){
     <div className='not-found-contain'>
       <SentimentDissatisfiedIcon color="primary-brown-100" 
           sx={{fontSize: 30}}  />
-      <p>Page Not Found.</p>
+      <p>Currently in construction.<br/> Please come back soon!</p>
     </div>
   );
 }

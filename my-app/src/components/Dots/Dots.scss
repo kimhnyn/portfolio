@@ -25,6 +25,7 @@
 }
 
 .dots-contain {
+  display: flex;
   &.horizontal {
     flex-direction: row;
   }

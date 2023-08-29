@@ -11,7 +11,7 @@ function PortfolioHomeCard(props) {
     <div className='proj' id={props.id}>
       <a href={props.link}>
         <img src={props.imgSrc}></img>
-        <div class='card-overlay'>
+        <div className='card-overlay'>
           <div className='header'>
             <h4>{category}.</h4>
             <p>{descr}</p>

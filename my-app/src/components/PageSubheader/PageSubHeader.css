@@ -14,6 +14,22 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.page-transition {
+  animation: fadeInUp ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 /* may edit later into a customizable grid mixin */
 .container {
   width: 80%;
@@ -117,6 +133,27 @@ body {
   gap: 2em;
 }
 
+ol, ul {
+  display: flex;
+  gap: 1.125rem;
+  flex-direction: column;
+}
+ol li, ul li {
+  line-height: 1.5rem;
+}
+
+.overview p, .descr-contain p {
+  margin-bottom: 1rem;
+}
+
+.descr-contain {
+  margin-bottom: 2em;
+}
+
+.left .descr-contain {
+  margin-bottom: 1rem;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
@@ -195,6 +232,7 @@ h1 {
 
 h2 {
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -212,7 +250,7 @@ h4 {
 /* Paragraphs */
 p {
   font-size: 1rem;
-  line-height: 170%;
+  line-height: 180%;
 }
 
 #accent-paragraph {
@@ -225,29 +263,51 @@ p.small-paragraph {
 }
 
 /* Links */
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+a:default, a:hover, a:active, a:after, a:visited {
+  color: inherit;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.title .description .small-paragraph {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  transform: none;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
 /* Import component-specific styles */
 .subheader-contain {
   display: flex;
   justify-content: flex-start;
-  padding: 3rem 10rem 3rem 3rem;
-  border-radius: 5rem 3rem 12.5em 2rem;
-  background-color: rgb(83, 94, 114);
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 200em;
-  flex-grow: 1;
-  flex-shrink: 1;
-  will-change: contents;
-  transition: all 300ms ease-in-out;
-  flex-grow: unset;
-  flex-shrink: unset;
 }
-.subheader-contain::before {
-  outline: white;
-}
-.subheader-contain:hover {
-  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.25);
-  outline: 3px solid white;
-  outline-offset: 4px;
-  transform: scale(0.98);
+.subheader-contain p {
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.5);
 }/*# sourceMappingURL=PageSubHeader.css.map */

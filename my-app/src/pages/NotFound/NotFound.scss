@@ -1,7 +1,11 @@
 @import '../../assets/styles/main.scss';
 
 .not-found-contain{
-  @include center-flex(column);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
   height: 80vh;
   gap: 0.5em;
 
