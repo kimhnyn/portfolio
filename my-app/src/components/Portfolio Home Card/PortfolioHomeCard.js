@@ -5,12 +5,12 @@ function PortfolioHomeCard(props) {
   const title = props.title;
   const category = props.categ;
   const descr = props.descr;
-  const link = '/' + props.link;
+  const link = props.link;
   const imgSrc = props.imgSrc;
 
   return(
     <div className='proj' id={props.id}>
-      <Link to={link}>
+      <Link to={props.link}>
         <img src={props.imgSrc}></img>
         <div className='card-overlay'>
           <div className='header'>
