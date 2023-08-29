@@ -26,11 +26,11 @@ function AnimatedRoutes() {
         <Route path="/about"><Transition key='about'><About /></Transition></Route>
         <Route path="/creative"><Transition key='creative'><Creative /></Transition></Route>
         <Route path="/portfolio"><Transition key='portfolio'><Portfolio /></Transition></Route>
-        <Route path="/projects/fanspace"><Transition key='fanspace'><FanSpace /></Transition></Route>
-        <Route path="/projects/bruinhive"><Transition key='bruinhive'><BruinHive /></Transition></Route>
-        <Route path="/projects/AASC"><Transition key='AASC'><AASC /></Transition></Route>
-        <Route path="/projects/classbuddi"><Transition key='classbuddi'><ClassBuddi /></Transition></Route>
-        <Route path="/projects/taskclear"><Transition key='taskclear'><TaskClear /></Transition></Route>
+        <Route path="/fanspace"><Transition key='fanspace'><FanSpace /></Transition></Route>
+        <Route path="/bruinhive"><Transition key='bruinhive'><BruinHive /></Transition></Route>
+        <Route path="/AASC"><Transition key='AASC'><AASC /></Transition></Route>
+        <Route path="/classbuddi"><Transition key='classbuddi'><ClassBuddi /></Transition></Route>
+        <Route path="di/taskclear"><Transition key='taskclear'><TaskClear /></Transition></Route>
         <Route path="/notfound"><Transition key='notfound'><NotFound /></Transition></Route>
     </Switch>
   );
