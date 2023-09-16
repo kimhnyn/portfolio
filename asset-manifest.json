@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c92a1c88.css",
-    "main.js": "/static/js/main.b686f28b.js",
+    "main.css": "/static/css/main.5dc2c096.css",
+    "main.js": "/static/js/main.8b238a9b.js",
     "static/media/FC-D3.PNG": "/static/media/FC-D3.13548898a3d2632d81e4.PNG",
     "static/media/FC-D2.PNG": "/static/media/FC-D2.1a197e5bccc086b3b1b8.PNG",
     "static/media/FC-C3.jpg": "/static/media/FC-C3.5888b66c7781e2691331.jpg",
@@ -36,17 +36,18 @@
     "static/media/BH-Lofi.png": "/static/media/BH-Lofi.a4b5e36109f894196510.png",
     "static/media/FC-D1.jpeg": "/static/media/FC-D1.f41d09f787cf2def1f3d.jpeg",
     "static/media/AASC-card.png": "/static/media/AASC-card.966fd8e4479ffd5d9d41.png",
+    "static/media/Sep-Resume.pdf": "/static/media/Sep-Resume.d118cc4050222c16bc2f.pdf",
     "static/media/CB-finding.png": "/static/media/CB-finding.f297a3c338841048aaa7.png",
     "static/media/BH-UserFlow.png": "/static/media/BH-UserFlow.f9084061f53567ab182b.png",
     "static/media/BH-style1.png": "/static/media/BH-style1.2d4c43e80c1e0521cee7.png",
     "static/media/BH-InfoArch.png": "/static/media/BH-InfoArch.a73f8355034a4bf4f739.png",
     "static/media/hwinyen.svg": "/static/media/hwinyen.250872a68695f6e8417f0b247d53d99a.svg",
     "index.html": "/index.html",
-    "main.c92a1c88.css.map": "/static/css/main.c92a1c88.css.map",
-    "main.b686f28b.js.map": "/static/js/main.b686f28b.js.map"
+    "main.5dc2c096.css.map": "/static/css/main.5dc2c096.css.map",
+    "main.8b238a9b.js.map": "/static/js/main.8b238a9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c92a1c88.css",
-    "static/js/main.b686f28b.js"
+    "static/css/main.5dc2c096.css",
+    "static/js/main.8b238a9b.js"
   ]
 }
