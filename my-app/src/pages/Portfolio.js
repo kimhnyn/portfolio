@@ -17,7 +17,7 @@ function Portfolio(){
             <div className='description descr-contain'>
               <div className='text-contain'>
                 <p>With my experiences both as an application designer and developer, I have been able to bring a <span id='accent-paragraph'>designer's perspective into development</span> and vice versa. </p>
-                <p>My priority is to make designs that are easily understood by developers and develop with meticulousness that truly realizes a designer's vision.</p>
+                <p>My priority is to make designs that are easily understood by developers and develop with a meticulousness that truly realizes a designer's vision.</p>
               </div>
             </div>
           </section>

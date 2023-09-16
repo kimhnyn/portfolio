@@ -6,7 +6,8 @@ nav .container{
   display: flex;
   flex-direction:row;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
+  gap: 2rem;
   @include horizontal-list;
   height: 5em;
   padding-top: 3em;

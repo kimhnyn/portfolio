@@ -24,7 +24,7 @@ or those interested in attending and reach out. Whether it be to find a fellow f
         <div className='right'>
           <div className='thumbnail-contain'>
             <img src={thumbnail} alt='Thumbnail'/>
-            <Button className='button' type='default' link='https://www.figma.com/proto/Nei1HGvgU2bNKtPjoVPCjn/B-Hive-Wireframes?page-id=54%3A1678&node-id=819-14933&starting-point-node-id=656%3A11126&scaling=scale-down&mode=design&t=QlAc5pVz05YgigVS-1' text='view Figma protoype.'/>
+            {/* <Button className='button' type='default' link='https://www.figma.com/proto/Nei1HGvgU2bNKtPjoVPCjn/B-Hive-Wireframes?page-id=54%3A1678&node-id=819-14933&starting-point-node-id=656%3A11126&scaling=scale-down&mode=design&t=QlAc5pVz05YgigVS-1' text='view Figma protoype.'/> */}
           </div>
         </div>
       </div>

@@ -35,7 +35,10 @@ function ClassBuddi() {
         <div className='right'>
           <div className='thumbnail-contain'>
             <img src={thumbnail} alt='Thumbnail'/>
-            <Button className='button' type='default' link='https://github.com/jainsujay02/classbuddi' text='see github.'/>
+            <div className='button-group'>
+            <Button className='button' type='default' link='https://github.com/jainsujay02/classbuddi' text='view github.'/>
+            <Button className='button' type='default' link='https://www.figma.com/file/FtZYuAiJ3KqUT2kqG09gPm/ClassBuddi-Wireframes?type=design&node-id=171%3A4297&mode=design&t=Gq74fktVS0j8Awg1-1' text='view prototype.'/>
+            </div>
           </div>
         </div>
       </div>

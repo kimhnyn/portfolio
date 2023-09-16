@@ -1,7 +1,7 @@
 import './Footer.scss';
 import LogoIcon from '../Images/LogoSVG';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from 'react-router-dom'; 
+import resume from '../../../src/Sep-Resume.pdf';
 
 function Footer(){
   return(
@@ -16,15 +16,15 @@ function Footer(){
       <div className='nav-links'>
         <p className='small-paragraph grey'>REACH OUT</p>
         <div className='contact-list flex'>
-          <a href='https://www.linkedin.com/in/kimberlynguyenh/' target="_blank">
+          <a href='https://www.linkedin.com/in/kimberlynguyenh/' target="_blank" rel="noreferrer">
 
             <p className='small-paragraph'>linkedin</p>
           </a>
-          <a href='https://github.com/kimhnyn' target="_blank">
+          <a href='https://github.com/kimhnyn' target="_blank" rel="noreferrer">
 
             <p className='small-paragraph'>github</p>
           </a>
-          <a href='mailto: kimhnguyeno@g.ucla.edu' target="_blank">
+          <a href='mailto: kimhnguyeno@g.ucla.edu' target="_blank" rel="noreferrer">
 
             <p className='small-paragraph'>kimhnguyeno@g.ucla.edu</p>
           </a> 
@@ -33,10 +33,11 @@ function Footer(){
       <div className='nav-links'>
       <p className='small-paragraph grey'>QUICK FIND</p>
         <div className='contact-list flex'>
-          <Link to='/'><p className='small-paragraph'>home</p></Link>
           <Link to='/portfolio'><p className='small-paragraph'>portfolio</p></Link>
+          <a href={resume} target="_blank" rel="noreferrer"><p className='small-paragraph'>resume</p></a>
           <Link to='/about'><p className='small-paragraph'>about</p></Link>
-         <Link to='/creative'><p className='small-paragraph'>creative</p></Link>
+          <Link to='/creative'><p className='small-paragraph'>creative</p></Link>
+
         </div>
       </div>
         
