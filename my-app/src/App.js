@@ -22,7 +22,6 @@ function AnimatedRoutes() {
 
   return (
     <Switch location={location}>
-        <Route exact path="/"><Transition key='home'><Home /></Transition></Route>
         <Route path="/about"><Transition key='about'><About /></Transition></Route>
         <Route path="/creative"><Transition key='creative'><Creative /></Transition></Route>
         <Route path="/portfolio"><Transition key='portfolio'><Portfolio /></Transition></Route>
@@ -32,6 +31,7 @@ function AnimatedRoutes() {
         <Route path="/projects/classbuddi"><Transition key='classbuddi'><ClassBuddi /></Transition></Route>
         <Route path="/projects/taskclear"><Transition key='taskclear'><TaskClear /></Transition></Route>
         <Route path="/notfound"><Transition key='notfound'><NotFound /></Transition></Route>
+        <Route exact path="/"><Transition key='home'><Home /></Transition></Route>
     </Switch>
   );
 }
